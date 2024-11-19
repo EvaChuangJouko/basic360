@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>360環景</title>
+ <script src="jquery-3.7.1.min.js"></script>
+	<style>
+			html, body {
+				margin: 0;
+				padding: 0!important;
+			}
+			.cycle {
+				background-image: url(demo_photo.jpg);
+				height: 600px;
+				cursor: move;
+			}
+			.ui-content { 
+  				padding: 0 !important;
+			}
+			.centerText{
+				text-align: center;
+			}
+		</style>
+</head>
+
+<body>
+	<div class="cycle"></div>
+	<script src="jquery.cyclotron.js"></script>
+			<script>
+				$(document).ready(function ($) {
+					$('.cycle').cyclotron();
+				});
+			</script>
+</body>
+</html>
